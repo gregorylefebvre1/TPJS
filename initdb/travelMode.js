@@ -6,10 +6,10 @@
 
 const mongoose = require('mongoose');
 
-const travelModeSchema = new mongooseSchema({
+const travelModeSchema = new mongoose.Schema({
     label: String,
     speed: {type: Number, required: true},
-    lifetime: {type: Number, required: true}
+    lifetime: {type: Number, required: true},
     position: {
         x: Number,
         y: Number

@@ -9,7 +9,7 @@
 
 const mongoose = require('mongoose');
 
-const ObjectId = Schema.Types.ObjectId;
+const ObjectId = mongoose.Schema.Types.ObjectId;
 
 mongoose.connect('mongodb://192.168.99.100:27027/SuperHeroesAndStuff', function(err) {
     if (err) { throw err; }
@@ -27,7 +27,7 @@ const heroeSchema = new mongoose.Schema({
 
 const heroeModel = mongoose.model('Heroe', heroeSchema);
 
-const daryl = new heroe.model({
+const daryl = new heroeModel({
     name: 'Daryl',
     travelMode: undefined,
     kills: 0,
@@ -36,7 +36,7 @@ const daryl = new heroe.model({
         y: Math.floor(Math.random()*50)+1
     }
 });
-const rick = new heroe.model({
+const rick = new heroeModel({
     name: 'Rick',
     travelMode: undefined,
     kills: 0,
@@ -45,7 +45,7 @@ const rick = new heroe.model({
         y: Math.floor(Math.random()*50)+1
     }
 });
-const michonne = new heroe.model({
+const michonne = new heroeModel({
     name: 'Michonne',
     travelMode: undefined,
     kills: 0,

@@ -32,11 +32,11 @@
 * */
 const mongoose = require('mongoose');
 
-const town = require('areas/town');
-const travelModeMaker = require('areas/travelModeMaker');
-const zombie = require('character/zombie');
-const travelMode = require('travelMode');
-const heroe = require('character/heroe');
+const town = require('./areas/town');
+const travelModeMaker = require('./areas/travelModeMaker');
+const zombie = require('./characters/zombie');
+const travelMode = require('./travelMode');
+const heroe = require('./characters/heroe');
 
 const zombieSpawn = function(){
 
