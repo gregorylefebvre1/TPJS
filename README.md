@@ -2,4 +2,4 @@
 
 Faire: git clone https://github.com/gregorylefebvre1/TPJS
 
-Puis: docker-compose up --build
+Puis au niveau du dossier créer précédemment faire: docker-compose up --build
