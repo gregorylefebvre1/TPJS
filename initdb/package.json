@@ -1,0 +1,21 @@
+{
+  "name": "initBDD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.4.1"
+  },"scripts": {
+  "start": "node main.js"
+},"xo": {
+  "esnext": true,
+  "space": 2,
+  "rules": {
+    "max-len": [
+      "error",
+      80,
+      2
+    ]
+  }
+}
+}
