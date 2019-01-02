@@ -2,17 +2,18 @@ version: '3'
 services:
   initdb:
     build: ./initdb
-    networks:
-    - tp
     ports:
     - "8080:8080"
+    networks:
+    - tp
     depends_on:
     - bdd
   bdd:
     image: mongo
-    networks:
-    - tp
     ports:
     - "27027:27017"
+    networks:
+    - tp
+
 networks:
   tp:

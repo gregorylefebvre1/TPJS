@@ -7,16 +7,16 @@
 const mongoose = require('mongoose');
 
 const travelModeSchema = new mongoose.Schema({
-    label: String,
-    speed: {type: Number, required: true},
-    lifetime: {type: Number, required: true},
-    position: {
-        x: Number,
-        y: Number
-    }
+	label: String,
+	speed: {type: Number, required: true},
+	lifetime: {type: Number, required: true},
+	position: {
+		x: Number,
+		y: Number
+	}
 });
 
 module.exports = {
-    schema: travelModeSchema,
-    model: mongoose.model('TravelMode', travelModeSchema),
+	schema: travelModeSchema,
+	model: mongoose.model('TravelMode', travelModeSchema)
 };

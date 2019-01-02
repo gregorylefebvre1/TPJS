@@ -8,17 +8,15 @@
 
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
-
-const zombieSchema = new Schema({
-    active: {type: Boolean, required: true},
-    position: {
-        x: Number,
-        y: Number
-    }
+const zombieSchema = new mongoose.Schema({
+	active: {type: Boolean, required: true},
+	position: {
+		x: Number,
+		y: Number
+	}
 });
 
 module.exports = {
-    schema: zombieSchema,
-    model: mongoose.model('Zombie', zombieSchema),
+	schema: zombieSchema,
+	model: mongoose.model('Zombie', zombieSchema)
 };

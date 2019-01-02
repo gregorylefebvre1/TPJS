@@ -29,17 +29,13 @@
 * évolution poney -> licorne
 * déplacement du héro
 * compteur de points de poutrage de zombie
-* */
-const mongoose = require('mongoose');
+*
 
 const town = require('./areas/town');
-const travelModeMaker = require('./areas/travelModeMaker');
+const travelModeMaker = require('./areas/travel-mode-maker');
 const zombie = require('./characters/zombie');
-const travelMode = require('./travelMode');
+const travelMode = require('./travel-mode');
 const heroe = require('./characters/heroe');
 
-const zombieSpawn = function(){
-
-};
-
-
+*/
+console.log('Happy New Year, ps: je suis un incapable');
